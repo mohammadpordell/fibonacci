@@ -1,0 +1,34 @@
+<html>
+<body>
+<script>    
+while(true){
+  function Factorial(w) {
+    if (w < 0)
+	{
+      return 
+    } 
+	else if (w === 0)
+	{
+      return 1;
+    }
+	else 
+	{
+      let result = 1;
+      for (let i = 1; i <= w; i++) {
+        result *= i;
+      }
+	  
+      return result;
+	  
+    }
+  }
+  
+ const userInput = prompt("وارد کردن عدد برای محاسبه فیبوناچی:");
+ 
+  const number = parseInt(userInput);
+  
+  alert(Factorial(number));
+}
+</script>
+</body>
+</html>
